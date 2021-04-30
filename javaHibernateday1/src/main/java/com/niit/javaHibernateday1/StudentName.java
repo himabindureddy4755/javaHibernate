@@ -33,7 +33,9 @@ import javax.persistence.Embeddable;
 		}
 		public void setlName(String lName) {
 			this.lName = lName;
-		};
+		}
+
+		
 		
 		
 
