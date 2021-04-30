@@ -1,13 +1,17 @@
 package com.niit.javaHibernateday1;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
-@Entity
+@Entity(name = "student")
 public class Student {
 	@Id
 	int id;
+	@Transient
 	String name;
+	@Column(name = "trimester")
 	int sem;
 	int average;
 
